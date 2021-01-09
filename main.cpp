@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int cents{};
+    int dollars100{};
+    int dollars50{};
+    int dollars20{};
+    int dollars10{};
+    int dollars5{};
+    int dollars1{};
+    int quarters{};
+    int dimes{};
+    int nickels{};
+    int pennies{};
+    cout << "Enter a number of cents: ";
+    cin >> cents;
+    dollars100 = cents / 10000;
+    cents %= 10000;
+    dollars50 = cents / 5000;
+    cents %= 5000;
+    dollars20 = cents / 2000;
+    cents %= 2000;
+    dollars10 = cents / 1000;
+    cents %= 1000;
+    dollars5 = cents / 500;
+    cents %= 500;
+    dollars1 = cents / 100;
+    cents %= 100;
+    quarters = cents / 25;
+    cents %= 25;
+    dimes = cents / 10;
+    cents %= 10;
+    nickels = cents / 5;
+    cents %= 5;
+    pennies = cents;
+    cout << "100 Dollar Bills: " << dollars100 << endl;
+    cout << "50 Dollar Bills: " << dollars50 << endl;
+    cout << "20 Dollar Bills: " << dollars20 << endl;
+    cout << "10 Dollar Bills: " << dollars10 << endl;
+    cout << "5 Dollar Bills: " << dollars5 << endl;
+    cout << "1 Dollars Bills: " << dollars1 << endl;
+    cout << "Quarters: " << quarters << endl;
+    cout << "Dimes: " << dimes << endl;
+    cout << "Nickels: " << nickels << endl;
+    cout << "Pennies: " << pennies << endl;
+    return 0;
+}
